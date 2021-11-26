@@ -1,0 +1,53 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">ComputingProject</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="to_do">Things To Do</string>
+    <string name="next">NEXT > </string>
+    <string name="wellcom">WELLCOME BACK!  </string>
+    <string name="username1">user name  </string>
+    <string name="password1">Password </string>
+    <string name="login_button">log in </string>
+    <string name="link_in_textview" tools:ignore="StringEscaping">
+        You Don't have an account ?
+         <a href="#">sign up</a>
+    </string>
+    <string name="wellcom_desc">if you already have an account , login  </string>
+
+    <string name="sign_up">create new account </string>
+    <string name="sign_up_desc">if you do not already have an account  </string>
+    <string name="name_signup">Name </string>
+    <string name="email_signup">E-mail</string>
+    <string name="rewrite_signup"> Re-Password</string>
+    <string name="signup_button"> Sign Up</string>
+    <string name="link_in_textview_signup" tools:ignore="StringEscaping">
+      You have an account ?
+         <a href="#">Log In</a>
+    </string>
+    <string name="add_info"> Complete Your Information</string>
+    <string name="add_info_button">Sava Data</string>
+    <string name="radio_male">Male</string>
+    <string name="radio_female">Female</string>
+    <string name="gender">gender</string>
+    <string name="wight">wight</string>
+    <string name="hight">hight</string>
+    <string name="date">date</string>
+    <string name="current_stats">current stats</string>
+    <string name="person_name">Hi, Abdallah</string>
+    <string name="stats">Normal , still good</string>
+
+    <string name="old_stats">old stats</string>
+    <string name="link_logout">
+        <a href="#">LOG OUT </a>
+    </string>
+
+
+
+</resources>
