@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".add_info">
-
+    tools:context=".NewRecord">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -15,58 +15,15 @@
 
 
         <TextView
-            android:id="@+id/add_info"
+            android:id="@+id/new_record"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:layout_marginBottom="20dp"
-            android:text="@string/add_info"
+            android:text="@string/new_record"
             android:textStyle="bold"
-            android:textColor="@color/purple_500"
-            android:textSize="35sp" />
-
-            <LinearLayout
-                android:layout_width="360dp"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="20dp"
-                tools:ignore="UselessLeaf">
-
-                <TextView
-                    android:id="@+id/gender"
-                    android:layout_width="110dp"
-                    android:layout_height="match_parent"
-                    android:gravity="center_vertical"
-                    android:textSize="18dp"
-                    android:textStyle="bold"
-                    android:textColor="@color/purple_500"
-                    android:text="@string/gender"
-                    tools:ignore="SpUsage" />
-
-                <RadioGroup
-                    android:id="@+id/radioSex"
-                    android:layout_width="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_height="wrap_content" >
-
-                    <RadioButton
-                        android:id="@+id/radioMale"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/radio_male"
-                        android:layout_marginEnd="50dp"
-                        android:checked="true" />
-
-                    <RadioButton
-                        android:id="@+id/radioFemale"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/radio_female" />
-
-                </RadioGroup>
-
-
-            </LinearLayout>
+            android:textColor="@color/purple_100"
+            android:textSize="38sp" />
 
         <LinearLayout
             android:layout_width="360dp"
@@ -82,7 +39,7 @@
                 android:gravity="center_vertical"
                 android:textSize="18dp"
                 android:textStyle="bold"
-                android:textColor="@color/purple_500"
+                android:textColor="@color/purple_100"
                 android:text="@string/wight"
                 tools:ignore="SpUsage" />
 
@@ -102,29 +59,29 @@
                     android:text="-"
                     android:textColor="@color/white" />
 
-            <EditText
-                android:id="@+id/wight_input"
-                android:layout_width="120dp"
-                android:layout_height="match_parent"
-                android:background="@drawable/input"
-                android:ems="10"
-                android:text="0"
-                android:gravity="center"
-                android:inputType="number"
-                tools:ignore="SpeakableTextPresentCheck">
+                <EditText
+                    android:id="@+id/wight_input"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/input"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:text="0"
+                    android:inputType="number"
+                    tools:ignore="SpeakableTextPresentCheck">
 
-            </EditText>
+                </EditText>
 
 
-            <Button
-                android:id="@+id/decrease_wight"
-                android:layout_width="48dp"
-                android:layout_height="match_parent"
-                android:background="@drawable/input"
-                android:text="+" />
+                <Button
+                    android:id="@+id/decrease_wight"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/input"
+                    android:text="+" />
             </LinearLayout>
             <TextView
-                android:id="@+id/kg2"
+                android:id="@+id/kg"
                 android:layout_width="40dp"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
@@ -150,7 +107,7 @@
                 android:gravity="center_vertical"
                 android:textSize="18dp"
                 android:textStyle="bold"
-                android:textColor="@color/purple_500"
+                android:textColor="@color/purple_100"
                 android:text="@string/hight"
                 tools:ignore="SpUsage" />
             <LinearLayout
@@ -160,36 +117,36 @@
                 android:layout_marginTop="20dp"
                 tools:ignore="UselessLeaf">
 
-            <Button
-                android:id="@+id/increase_hight"
-                android:layout_width="48dp"
-                android:layout_height="match_parent"
-                android:background="@drawable/input"
-                android:text="-"
-                android:textColor="@color/white" />
+                <Button
+                    android:id="@+id/increase_hight"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/input"
+                    android:text="-"
+                    android:textColor="@color/white" />
 
-            <EditText
-                android:id="@+id/hight_input"
-                android:layout_width="120dp"
-                android:layout_height="match_parent"
-                android:background="@drawable/input"
-                android:ems="10"
-                android:text="0"
-                android:gravity="center"
-                android:inputType="number"
-                tools:ignore="SpeakableTextPresentCheck">
+                <EditText
+                    android:id="@+id/hight_input"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/input"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:text="0"
+                    android:inputType="number"
+                    tools:ignore="SpeakableTextPresentCheck">
 
-            </EditText>
+                </EditText>
 
-            <Button
-                android:id="@+id/decrease_hight"
-                android:layout_width="48dp"
-                android:layout_height="match_parent"
-                android:background="@drawable/input"
-                android:text="+" />
+                <Button
+                    android:id="@+id/decrease_hight"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/input"
+                    android:text="+" />
             </LinearLayout>
             <TextView
-                android:id="@+id/cm2"
+                android:id="@+id/cm"
                 android:layout_width="40dp"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
@@ -215,7 +172,7 @@
                 android:gravity="center_vertical"
                 android:textSize="18dp"
                 android:textStyle="bold"
-                android:textColor="@color/purple_500"
+                android:textColor="@color/purple_100"
                 android:text="@string/date"
                 tools:ignore="SpUsage" />
 
@@ -234,18 +191,48 @@
 
 
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            tools:ignore="UselessLeaf">
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/purple_100"
+                android:text="@string/time"
+                tools:ignore="SpUsage" />
+
+
+            <EditText
+                android:id="@+id/editTexttime"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:autofillHints="date"
+                android:ems="10"
+                android:paddingLeft="11dp"
+                android:hint="your Time"
+                android:background="@drawable/input"
+                android:inputType="date"
+                tools:ignore="LabelFor,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+
+        </LinearLayout>
         <Button
             android:id="@+id/add_info_button"
             android:layout_width="360dp"
             android:layout_marginTop="60dp"
-            android:background="@color/purple_500"
+            android:background="@color/purple_100"
             android:layout_height="wrap_content"
             android:text="@string/add_info_button" />
 
 
 
     </LinearLayout>
-
-
-
 </FrameLayout>

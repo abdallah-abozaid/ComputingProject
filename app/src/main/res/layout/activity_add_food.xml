@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddFood">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        tools:ignore="UselessParent">
+
+
+        <TextView
+            android:id="@+id/add_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:text="@string/add_food"
+            android:textStyle="bold"
+            android:textColor="@color/purple_100"
+            android:textSize="35sp" />
+
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/name"
+                android:textColor="@color/purple_100"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                tools:ignore="SpUsage" />
+
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                tools:ignore="UselessLeaf">
+
+                <EditText
+                    android:id="@+id/food_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/input"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    tools:ignore="SpeakableTextPresentCheck"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/category"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/category"
+                android:textColor="@color/purple_100"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                tools:ignore="SpUsage" />
+
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                tools:ignore="UselessLeaf">
+
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="match_parent"
+                        android:drawSelectorOnTop="true"
+                        android:entries="@array/country_arrays"
+                        android:prompt="@string/country_prompt"
+                        android:layout_height="match_parent"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/calary"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/calary"
+                android:textColor="@color/purple_100"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                tools:ignore="SpUsage" />
+
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                tools:ignore="UselessLeaf">
+
+                <EditText
+                    android:id="@+id/calary_size"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/input"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    tools:ignore="SpeakableTextPresentCheck"/>
+                <TextView
+                    android:id="@+id/cal"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/black"
+                    android:text="cal/g"
+                    tools:ignore="SpUsage" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/photo_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/photo"
+                android:textColor="@color/purple_100"
+                android:textSize="18dp"
+                android:layout_marginBottom="20dp"
+                android:textStyle="bold"
+                tools:ignore="SpUsage" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/upload_photo"
+            android:layout_width="160dp"
+            android:layout_marginLeft="30dp"
+            android:background="@color/purple_500"
+            android:layout_height="wrap_content"
+            android:text="@string/upload_photo" />
+        <Button
+            android:id="@+id/save"
+            android:layout_width="120dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/purple_500"
+            android:layout_height="wrap_content"
+            android:text="@string/save" />
+
+    </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

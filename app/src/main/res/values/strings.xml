@@ -47,6 +47,29 @@
     <string name="link_logout">
         <a href="#">LOG OUT </a>
     </string>
+    <string name="new_record">New Record</string>
+    <string name="time">Time</string>
+    <string name="add_food">Add Food Details</string>
+
+    <string name="name">name</string>
+    <string name="category">category</string>
+    <string name="calary">calary</string>
+    <string name="photo">photo</string>
+    <string name="save">save</string>
+    <string name="upload_photo">upload photo</string>
+    <string name="country_prompt">Choose a country</string>
+    <string-array name="country_arrays">
+<!--        <item> </item>-->
+        <item>Malaysia</item>
+        <item>United States</item>
+        <item>Indonesia</item>
+        <item>France</item>
+        <item>Italy</item>
+        <item>Singapore</item>
+        <item>New Zealand</item>
+        <item>India</item>
+    </string-array>
+
 
 
 

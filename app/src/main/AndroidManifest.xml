@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ComputingProject">
         <activity
+            android:name=".AddFood"
+            android:exported="false" />
+        <activity
+            android:name=".NewRecord"
+            android:exported="false" />
+        <activity
             android:name=".persondata"
             android:exported="false" />
         <activity
