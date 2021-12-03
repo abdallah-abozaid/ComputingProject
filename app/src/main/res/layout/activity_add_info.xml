@@ -86,13 +86,21 @@
                 android:text="@string/wight"
                 tools:ignore="SpUsage" />
 
-            <Button
-                android:id="@+id/increase_wight"
-                android:layout_width="48dp"
-                android:layout_height="match_parent"
-                android:background="@drawable/input"
-                android:text="-"
-                android:textColor="@color/white" />
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                tools:ignore="UselessLeaf">
+
+                <Button
+                    android:id="@+id/increase_wight"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/purple_100"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="@color/white" />
 
             <EditText
                 android:id="@+id/wight_input"
@@ -112,6 +120,8 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/input"
                 android:text="+" />
+
+            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
@@ -131,6 +141,12 @@
                 android:textColor="@color/purple_500"
                 android:text="@string/hight"
                 tools:ignore="SpUsage" />
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                tools:ignore="UselessLeaf">
 
             <Button
                 android:id="@+id/increase_hight"
@@ -151,14 +167,13 @@
 
             </EditText>
 
-
             <Button
                 android:id="@+id/decrease_hight"
                 android:layout_width="48dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/input"
                 android:text="+" />
-
+            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
