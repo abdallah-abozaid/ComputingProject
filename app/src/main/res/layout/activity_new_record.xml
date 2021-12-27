@@ -1,238 +1,247 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NewRecord">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:layout_gravity="center_vertical"
-        tools:ignore="UselessParent">
+    android:orientation="vertical"
+    tools:context="com.example.bmiProject.com.abdulla.bmi.ui.activityNewRecord">
 
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/new_record"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:layout_marginBottom="20dp"
-            android:text="@string/new_record"
-            android:textStyle="bold"
-            android:textColor="@color/purple_100"
-            android:textSize="38sp" />
+            android:text="BMI Analyzer"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </com.google.android.material.appbar.AppBarLayout>
 
-        <LinearLayout
-            android:layout_width="360dp"
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="New Record"
+        android:textColor="@color/purple_500"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="12sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="20dp"
-            tools:ignore="UselessLeaf">
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20dp"
+            android:text="Weight"
+            android:textColor="@color/purple_500"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/wight"
-                android:layout_width="110dp"
-                android:layout_height="match_parent"
-                android:gravity="center_vertical"
-                android:textSize="18dp"
-                android:textStyle="bold"
-                android:textColor="@color/purple_100"
-                android:text="@string/wight"
-                tools:ignore="SpUsage" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/minWei"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16sp"
+            android:background="@drawable/backgrond_conter"
+            android:gravity="center"
+            android:onClick="minWei"
+            android:paddingBottom="4dp"
+            android:text="-"
+            android:textColor="@color/purple_500"
+            android:textSize="16sp" />
 
-            <LinearLayout
-                android:layout_width="220dp"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="20dp"
-                tools:ignore="UselessLeaf">
+        <EditText
+            android:id="@+id/weight"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:background="@drawable/backgrond_conter"
+            android:gravity="center"
+            android:inputType="number"
+            android:text="50"
+            android:textColor="@color/purple_500"
+            android:textSize="16sp" />
 
-                <Button
-                    android:id="@+id/increase_wight"
-                    android:layout_width="48dp"
-                    android:layout_height="match_parent"
-                    android:background="@color/purple_100"
-                    android:gravity="center"
-                    android:text="-"
-                    android:textColor="@color/white" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/maxWei"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:layout_gravity="center"
+            android:background="@drawable/backgrond_conter"
+            android:gravity="center"
+            android:onClick="maxWei"
+            android:text="+"
+            android:textColor="@color/purple_500"
+            android:textSize="16sp" />
 
-                <EditText
-                    android:id="@+id/wight_input"
-                    android:layout_width="120dp"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/input"
-                    android:ems="10"
-                    android:gravity="center"
-                    android:text="0"
-                    android:inputType="number"
-                    tools:ignore="SpeakableTextPresentCheck">
-
-                </EditText>
-
-
-                <Button
-                    android:id="@+id/decrease_wight"
-                    android:layout_width="48dp"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/input"
-                    android:text="+" />
-            </LinearLayout>
-            <TextView
-                android:id="@+id/kg"
-                android:layout_width="40dp"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:layout_marginTop="30dp"
-                android:textSize="18dp"
-                android:textStyle="bold"
-                android:textColor="@color/purple_100"
-                android:text="kg"
-                tools:ignore="SpUsage" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="360dp"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="20dp"
-            tools:ignore="UselessLeaf">
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="kg"
+            android:textColor="@color/purple_500" />
+    </LinearLayout>
 
-            <TextView
-                android:id="@+id/hight"
-                android:layout_width="110dp"
-                android:layout_height="match_parent"
-                android:gravity="center_vertical"
-                android:textSize="18dp"
-                android:textStyle="bold"
-                android:textColor="@color/purple_100"
-                android:text="@string/hight"
-                tools:ignore="SpUsage" />
-            <LinearLayout
-                android:layout_width="220dp"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="20dp"
-                tools:ignore="UselessLeaf">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="12sp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="12sp"
+        android:orientation="horizontal">
 
-                <Button
-                    android:id="@+id/increase_hight"
-                    android:layout_width="48dp"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/input"
-                    android:text="-"
-                    android:textColor="@color/white" />
-
-                <EditText
-                    android:id="@+id/hight_input"
-                    android:layout_width="120dp"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/input"
-                    android:ems="10"
-                    android:gravity="center"
-                    android:text="0"
-                    android:inputType="number"
-                    tools:ignore="SpeakableTextPresentCheck">
-
-                </EditText>
-
-                <Button
-                    android:id="@+id/decrease_hight"
-                    android:layout_width="48dp"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/input"
-                    android:text="+" />
-            </LinearLayout>
-            <TextView
-                android:id="@+id/cm"
-                android:layout_width="40dp"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:layout_marginTop="30dp"
-                android:textSize="18dp"
-                android:textStyle="bold"
-                android:textColor="@color/purple_100"
-                android:text="cm"
-                tools:ignore="SpUsage" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="360dp"
-            android:layout_height="50dp"
-            android:orientation="horizontal"
-            android:layout_marginTop="20dp"
-            tools:ignore="UselessLeaf">
-
-            <TextView
-                android:id="@+id/date"
-                android:layout_width="110dp"
-                android:layout_height="match_parent"
-                android:gravity="center_vertical"
-                android:textSize="18dp"
-                android:textStyle="bold"
-                android:textColor="@color/purple_100"
-                android:text="@string/date"
-                tools:ignore="SpUsage" />
-
-
-            <EditText
-                android:id="@+id/editTextDate"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:autofillHints="date"
-                android:ems="10"
-                android:paddingLeft="11dp"
-                android:hint="your date"
-                android:background="@drawable/input"
-                android:inputType="date"
-                tools:ignore="LabelFor,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
-
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="360dp"
-            android:layout_height="50dp"
-            android:orientation="horizontal"
-            android:layout_marginTop="20dp"
-            tools:ignore="UselessLeaf">
-
-            <TextView
-                android:id="@+id/time"
-                android:layout_width="110dp"
-                android:layout_height="match_parent"
-                android:gravity="center_vertical"
-                android:textSize="18dp"
-                android:textStyle="bold"
-                android:textColor="@color/purple_100"
-                android:text="@string/time"
-                tools:ignore="SpUsage" />
-
-
-            <EditText
-                android:id="@+id/editTexttime"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:autofillHints="date"
-                android:ems="10"
-                android:paddingLeft="11dp"
-                android:hint="your Time"
-                android:background="@drawable/input"
-                android:inputType="date"
-                tools:ignore="LabelFor,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
-
-
-        </LinearLayout>
-        <Button
-            android:id="@+id/add_info_button"
-            android:layout_width="360dp"
-            android:layout_marginTop="60dp"
-            android:background="@color/purple_100"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/add_info_button" />
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20dp"
+            android:text="Length"
+            android:textColor="@color/purple_500"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/minLength"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16sp"
+            android:background="@drawable/backgrond_conter"
+            android:gravity="center"
+            android:onClick="minLength"
+            android:paddingBottom="4dp"
+            android:text="-"
+            android:textColor="@color/purple_500"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/length"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:background="@drawable/backgrond_conter"
+            android:gravity="center"
+            android:inputType="number"
+            android:text="120"
+            android:textColor="@color/purple_500"
+            android:textSize="16sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/maxLength"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:layout_gravity="center"
+            android:background="@drawable/backgrond_conter"
+            android:gravity="center"
+            android:onClick="maxLength"
+            android:text="+"
+            android:textColor="@color/purple_500"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="cm"
+            android:textColor="@color/purple_500" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="12sp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="12sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20dp"
+            android:text="Date"
+            android:textColor="@color/purple_500"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="145dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="34dp"
+            android:background="@drawable/backgrond_conter"
+            android:gravity="center"
+            android:textColor="@color/purple_500"
+            android:textSize="16sp" />
 
 
     </LinearLayout>
-</FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="12sp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="12sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20dp"
+            android:text="Time"
+            android:textColor="@color/purple_500"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="145dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="32dp"
+            android:background="@drawable/backgrond_conter"
+            android:gravity="center"
+            android:textColor="@color/purple_500"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_saveData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="20sp"
+    android:onClick="save"
+        android:background="@drawable/bg_et"
+        android:text="Save Data"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="16sp" />
+</LinearLayout>

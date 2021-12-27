@@ -1,48 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple_700"
-    android:layoutDirection="ltr">
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/purple_500"
+    tools:context="com.example.bmiProject.com.abdulla.bmi.ui.splashActivity">
 
-    <LinearLayout
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:layout_gravity="center_vertical"
-        >
-
-        <ImageView
-            android:id="@+id/login_img"
-            android:layout_width="85dp"
-            android:layout_height="85dp"
-            tools:srcCompat="@tools:sample/avatars" />
-
-        <TextView
-            android:id="@+id/title_img"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/to_do"
-            android:gravity="center"
-            android:textSize="24sp"
-            android:textColor="@color/white"
-            android:textFontWeight="400"/>
-
-
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/btnNext"
-        android:textFontWeight="400"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="5mm"
-        android:layout_marginBottom="5mm"
-        android:textColor="@color/white"
-        android:layout_gravity="bottom|end"
-        android:text="@string/next" />
+        android:src="@drawable/logo"
+        android:layout_margin="100sp"
+        android:scaleType="centerInside" />
 
-</FrameLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

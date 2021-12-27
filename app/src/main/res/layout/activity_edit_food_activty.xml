@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.bmiProject.com.abdulla.bmi.ui.AddFoodActivity">
+    tools:context="com.example.bmiProject.com.abdulla.bmi.ui.EditFoodActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout"
@@ -40,7 +40,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
                 android:gravity="center"
-                android:text="Add Food Details"
+                android:text="Edit Food Details"
                 android:textColor="@color/purple_500"
                 android:textSize="24dp"
                 android:textStyle="bold" />
@@ -67,9 +67,9 @@
 
 
                 <EditText
-                    android:id="@+id/et_nameFood"
+                    android:id="@+id/etNameFood"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="35dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
                     android:layout_weight="2"
@@ -104,7 +104,7 @@
                 <Spinner
                     android:id="@+id/spinner"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="35dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
                     android:layout_weight="2"
@@ -140,7 +140,7 @@
                 <EditText
                     android:id="@+id/etClary"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="35dp"
                     android:layout_marginLeft="20dp"
                     android:layout_weight="2"
                     android:background="@drawable/backgrond_conter"
@@ -153,7 +153,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
                     android:layout_marginRight="8dp"
-                    android:text="kg"
+                    android:text="lg"
                     android:textColor="@color/purple_500" />
 
             </LinearLayout>
@@ -192,7 +192,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/bg_et"
                     android:padding="16dp"
-                    android:text="Update Photo"
+                    android:text="Upload Photo"
                     android:textAllCaps="false"
                     android:textColor="@color/white"
                     android:textSize="16sp" />

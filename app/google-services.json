@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "33316960370",
+    "project_id": "bmi-uni-project",
+    "storage_bucket": "bmi-uni-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:33316960370:android:f29bc315b088568a826aeb",
+        "android_client_info": {
+          "package_name": "com.wesam.bmi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "33316960370-bdulerql81rhi8gh63jtjv2efd700sia.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTOzlDbVRkt9aUzrOWOC35Wx9SbqAXub4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "33316960370-bdulerql81rhi8gh63jtjv2efd700sia.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

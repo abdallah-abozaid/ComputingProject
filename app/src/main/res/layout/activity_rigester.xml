@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.bmiProject.com.abdulla.bmi.ui.LoginActivity">
+    tools:context="com.example.bmiProject.com.abdulla.bmi.ui.activityRegiester">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout"
@@ -36,51 +36,73 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Welcome back"
+            android:text="Create new Account"
             android:textColor="@color/purple_500"
-            android:textSize="20dp"
+            android:textSize="36sp"
             android:textStyle="bold" />
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:layout_marginBottom="32dp"
             android:gravity="center"
-            android:text="if you already have an account log in "
+            android:text="if you do not already have an account "
             android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:hint="userName"
+            android:inputType="text"
+            android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/mail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16sp"
-            android:hint="userName"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:hint="E-mail"
             android:inputType="textEmailAddress"
-            android:padding="12sp" />
+            android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16sp"
-            android:layout_marginRight="16sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
             android:hint="password"
             android:inputType="textPassword"
-            android:padding="12sp" />
+            android:minHeight="48dp" />
 
+        <EditText
+            android:id="@+id/agenPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="re-password"
+            android:inputType="textPassword" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/login"
+            android:id="@+id/create"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="40dp"
             android:layout_marginRight="40dp"
             android:background="@drawable/bg_et"
-            android:text="Login"
-            android:textColor="#FFF"
+            android:text="Create"
+            android:textColor="@color/white"
             android:textSize="16sp" />
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -93,26 +115,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="you dont have an account ?"
+                android:text="You  Have An Account ? "
                 android:textColor="#000"
                 android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/regester"
+                android:id="@+id/login"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="SignUp"
+                android:text="Login"
                 android:textColor="@color/purple_500"
                 android:textSize="16sp" />
         </LinearLayout>
-        <ProgressBar
-            android:visibility="gone"
-            android:id="@+id/progressBar2"
-            style="?android:attr/progressBarStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            />
+
     </LinearLayout>
 
 

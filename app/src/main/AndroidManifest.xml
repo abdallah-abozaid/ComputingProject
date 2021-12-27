@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.computingproject">
+    package="com.example.bmiProject">
 
     <application
         android:allowBackup="true"
@@ -8,28 +8,26 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ComputingProject">
+        android:theme="@style/Theme.BMI_App">
         <activity
-            android:name=".AddFood"
+            android:name="com.example.bmiProject.com.abdulla.bmi.ui.EditFoodActivity"
             android:exported="false" />
         <activity
-            android:name=".NewRecord"
+            android:name="com.example.bmiProject.com.abdulla.bmi.ui.activityListFood"
             android:exported="false" />
         <activity
-            android:name=".persondata"
+            android:name="com.example.bmiProject.com.abdulla.bmi.ui.AddFoodActivity"
             android:exported="false" />
         <activity
-            android:name=".add_info"
+            android:name="com.example.bmiProject.com.abdulla.bmi.ui.activityNewRecord"
             android:exported="false" />
         <activity
-            android:name=".SignUp"
+            android:name="com.example.bmiProject.com.abdulla.bmi.ui.activityHome"
             android:exported="false" />
-        <activity
-            android:name=".login"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
+        <activity android:name="com.example.bmiProject.com.abdulla.bmi.ui.activityCompleteRegiester" />
+        <activity android:name="com.example.bmiProject.com.abdulla.bmi.ui.activityRegiester" />
+        <activity android:name="com.example.bmiProject.com.abdulla.bmi.ui.LoginActivity" />
+        <activity android:name="com.example.bmiProject.com.abdulla.bmi.ui.splashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

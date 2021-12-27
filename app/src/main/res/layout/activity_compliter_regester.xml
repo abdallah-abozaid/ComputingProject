@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.bmiProject.com.abdulla.bmi.ui.activityCompleteRegiester">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="BMI Analyzer"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20sp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12sp"
+            android:gravity="center"
+            android:padding="12sp"
+            android:text="Complete Your Information"
+            android:textColor="@color/purple_500"
+            android:textSize="36dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="24sp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20sp"
+                android:gravity="center"
+                android:text="Gender"
+                android:textColor="@color/purple_500"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12sp"
+                    android:layout_marginRight="12sp"
+                    android:buttonTint="@color/purple_500"
+                    android:checked="true"
+                    android:text="Male"
+                    android:textColor="@color/purple_500"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12sp"
+                    android:layout_marginRight="12sp"
+                    android:buttonTint="@color/purple_500"
+                    android:text="Female"
+                    android:textColor="@color/purple_500"
+                    android:textSize="16sp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="12sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20dp"
+                android:text="Weight"
+                android:textColor="@color/purple_500"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/minWei"
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16sp"
+                android:background="@drawable/backgrond_conter"
+                android:gravity="center"
+                android:onClick="minWei"
+                android:paddingBottom="4dp"
+                android:text="-"
+                android:textColor="@color/purple_500"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/weight"
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:background="@drawable/backgrond_conter"
+                android:gravity="center"
+                android:inputType="number"
+                android:text="50"
+                android:textColor="@color/purple_500"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/maxWei"
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:layout_gravity="center"
+                android:background="@drawable/backgrond_conter"
+                android:gravity="center"
+                android:onClick="maxWei"
+                android:text="+"
+                android:textColor="@color/purple_500"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="kg"
+                android:textColor="@color/purple_500" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="12sp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="12sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20dp"
+                android:text="Length"
+                android:textColor="@color/purple_500"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/minLength"
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16sp"
+                android:background="@drawable/backgrond_conter"
+                android:gravity="center"
+                android:onClick="minLength"
+                android:paddingBottom="4dp"
+                android:text="-"
+                android:textColor="@color/purple_500"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/length"
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:background="@drawable/backgrond_conter"
+                android:gravity="center"
+                android:inputType="number"
+                android:text="120"
+                android:textColor="@color/purple_500"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/maxLength"
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:layout_gravity="center"
+                android:background="@drawable/backgrond_conter"
+                android:gravity="center"
+                android:onClick="maxLength"
+                android:text="+"
+                android:textColor="@color/purple_500"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="cm"
+                android:textColor="@color/purple_500" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="12sp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="12sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20dp"
+                android:text="BirthDay"
+                android:textColor="@color/purple_500"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/birthday"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/backgrond_conter"
+                android:gravity="center"
+                android:textColor="@color/purple_500"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="20sp"
+            android:background="@drawable/bg_et"
+            android:onClick="save"
+            android:text="Save Data"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
